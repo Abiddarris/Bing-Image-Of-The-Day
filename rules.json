@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/bingwallpaper.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "||bingwallpaper.com",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
+

@@ -1,0 +1,22 @@
+{
+  "name": "Bing Wallpaper on bingwallpaper.com",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://bingwallpaper.com/*", "https://www.bing.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "web_accessible_resources": [{
+    "resources": ["bingwallpaper.html"],
+    "matches": ["<all_urls>"]
+  }]
+}
+
